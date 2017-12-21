@@ -7,7 +7,7 @@ push: build
 	docker push opny/openvpn-client
 
 build-armhf:
-	docker build . -t opny/openvpn-client-armhf
+	docker build . -f Dockerfile.armhf -t opny/openvpn-client-armhf
 
 push-armhf: build-armhf
 	docker push opny/openvpn-client-armhf
