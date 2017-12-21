@@ -1,4 +1,4 @@
-.PHONY: build push run build-arm push-arm
+.PHONY: build push run build-armhf push-armhf
 
 build:
 	docker build . -t opny/openvpn-client
